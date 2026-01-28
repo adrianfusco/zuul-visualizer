@@ -10,7 +10,7 @@ import axios from 'axios';
 import dagre from 'dagre';
 import { Send, MessageSquare, Info, Copy, X, Settings, Grid, Layout, Palette, RotateCcw, ChevronDown, ChevronRight, List, Share2, ArrowRight, ArrowDown } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5001/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api';
 
 const NODE_STYLES = {
   small: { width: 180, fontSize: '12px', spacingX: 250, spacingY: 100 },
